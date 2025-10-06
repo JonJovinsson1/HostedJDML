@@ -20,8 +20,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
 
+<body>
     <header class="site-header">
         <div style="padding: 1rem 6rem">
             <a href="#home" class="logo">JDML.</a>
@@ -32,6 +32,7 @@
                     <li><a href="#seo-media">SEO & Media</a></li>
                     <li><a href="#ml-ai">ML and AI</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a id="lang" href="es/index.html">ES</a></li>
                 </ul>
             </nav>
             <button class="hamburger" id="hamburger-menu">
@@ -42,7 +43,7 @@
 
     <main>
         <!-- Home/Hero Section -->
-        <section id="home" class="hero-section" style="justify-content: left; padding: 3rem 6rem; height: 90vh">
+        <section id="home" class="hero-section" style="">
             <div class="video-background">
                 <!-- IMPORTANT: Replace with your own video file -->
                 <video autoplay muted loop playsinline>
@@ -52,7 +53,7 @@
             </div>
             <div class="overlay"></div>
             <div class="hero-content">
-                <h1 class="animate-on-scroll">Improving buisnesses through Web, Applicantions, Machine Learning & AI Solutions</h1>
+                <h1 class="animate-on-scroll">Improving buisnesses through software engineering and Machine Learning</h1>
                 <p class="animate-on-scroll">Smart solutions in Machine Learning, Websites, and Applications with creative media and Generative AI services.</p>
                 <a href="#contact" class="btn btn-primary animate-on-scroll">Get in Touch</a>
             </div>
@@ -61,7 +62,7 @@
             </a>
         </section>
 
-        <!-- About Section --> w
+        <!-- About Section --> 
         <section id="about" class="content-section animate-on-scroll">
             <div class="container two-column">
                 <!-- Put this inside <body> -->
@@ -108,8 +109,8 @@
         </section>
 
         <!-- Websites Section -->
-        <section id="websites" class="content-section bg-dark animate-on-scroll">
-            <div class="container two-column">
+        <section  class="content-section bg-dark animate-on-scroll">
+            <div id="websites" class="container three-column">
                 <div class="column-text">
                     <h2>Website Solutions</h2>
                     <h3>YOUR DIGITAL HUB</h3>
@@ -132,19 +133,7 @@
                     <h4>Flexible Hosting & Management</h4>
                     <p>We offer fully packaged websites for your own hosting or a Fully Managed Solution on Google Cloud Platform (GCP), handling all technical aspects for a monthly fee.</p>
                 </div>
-                <div class="column-image">
-                    <img src="assets/images/webdesign.png" alt="JDML Website design examples">
-                </div>
-            </div>
-        </section>
-        
-        <!-- SEO & Media Section -->
-        <section id="seo-media" class="content-section animate-on-scroll">
-             <div class="container two-column">
-                <div class="column-image">
-                    <img src="assets/images/seoimage.png" alt="Media production and SEO chart">
-                </div>
-                <div class="column-text">
+                <div id="seo-media" class="column-text">
                     <h2>SEO & Media</h2>
                     <h3>GROWTH THROUGH VISIBILITY</h3>
                     <p>Our creative media services are tightly integrated with SEO strategies that improve your online visibility and drive measurable growth. Every piece of content is optimized for search engines and aligned with your brand’s objectives.</p>
@@ -160,12 +149,7 @@
                     <h4>SEO Integration & Transparency</h4>
                     <p>Unlike agencies that treat SEO as a “mystery box,” we believe in a transparent, iterative approach. We provide clear reporting and insights so you always know what’s driving performance.</p>
             </div>
-        </section>
-
-        <!-- ML and AI Section -->
-        <section id="ml-ai" class="content-section bg-dark animate-on-scroll">
-            <div class="container two-column">
-                <div class="column-text">
+                <div id="ml-ai" class="column-text">
                     <h2>Machine Learning & AI</h2>
                     <h3>INTELLIGENT SOLUTIONS</h3>
                     <p>We build and deploy cutting-edge Machine Learning (ML) and Artificial Intelligence (AI) solutions using industry-leading frameworks such as PyTorch and TensorFlow. Our expertise spans predictive modeling, natural language processing, and intelligent automation.</p>
@@ -180,9 +164,6 @@
 
                     <h4>Next-Generation AI Capabilities</h4>
                     <p>We create custom applications powered by large language models like ChatGPT, Gemini, and Claude, from conversational agents to intelligent, task-focused AI systems that act autonomously.</p>
-                </div>
-                <div class="column-image">
-                    <img src="assets/images/JDMLai.png" alt="Abstract AI visualization">
                 </div>
             </div>
         </section>
