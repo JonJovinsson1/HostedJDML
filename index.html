@@ -3,36 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JDML Web & Applications</title>
-
-    <!-- Google Fonts: Poppins for Headings, Montserrat for Body -->
+    <title>JDML | Transforming Businesses with Technology</title>
+    <!-- Fonts and Font Awesome links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-
-    <!-- Custom CSS -->
+    <!-- Link to the new CSS -->
     <link rel="stylesheet" href="assets/style.css">
 </head>
+<body class="home"> <!-- IMPORTANT: Added class="home" here -->
 
-<body>
+    <!-- The single, correct header placed right after the opening body tag -->
     <header class="site-header">
-        <div style="padding: 1rem 6rem">
-            <a href="#home" class="logo">JDML.</a>
+        <div class="container header-container">
+            <a href="index.html" class="logo">JDML.</a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#websites">Websites</a></li>
-                    <li><a href="#seo-media">SEO & Media</a></li>
-                    <li><a href="#ml-ai">ML and AI</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a id="lang" href="es/index.html">ES</a></li>
+                    <li><a href="index.html" class="active">Home</a></li> <!-- Added 'active' class -->
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!--<li><a id="lang" href="es/index.html">ES</a></li> Link to Spanish version -->
                 </ul>
             </nav>
             <button class="hamburger" id="hamburger-menu">
@@ -42,170 +34,113 @@
     </header>
 
     <main>
-        <!-- Home/Hero Section -->
-        <section id="home" class="hero-section" style="">
-            <div class="video-background">
-                <!-- IMPORTANT: Replace with your own video file -->
-                <video autoplay muted loop playsinline>
-                    <source src="assets/background-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="overlay"></div>
-            <div class="hero-content">
-                <h1 class="animate-on-scroll">Improving buisnesses through software engineering and Machine Learning</h1>
-                <p class="animate-on-scroll">Smart solutions in Machine Learning, Websites, and Applications with creative media and Generative AI services.</p>
-                <a href="#contact" class="btn btn-primary animate-on-scroll">Get in Touch</a>
-            </div>
-            <a href="#about" class="scroll-down-indicator">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </section>
-
-        <!-- About Section --> 
-        <section id="about" class="content-section animate-on-scroll">
-            <div class="container two-column">
-                <!-- Put this inside <body> -->
-                <div class="column-image">
-                <section class="founders-section" aria-labelledby="founders-title">
-                  <h2 id="founders-title" class="sr-only">Founders</h2>
-
-                  <div class="founders">
-                    <figure class="founder">
-                      <img src="assets/images/colour-photo-jon.jpeg" alt="Photo of Jon Jovinsson, Co-Founder" class="founder-photo">
-                      <figcaption class="founder-caption">
-                        <p class="founder-name">Jon Jovinsson</p>
-                        <p class="founder-role">Co-Founder & CEO</p>
-                      </figcaption>
-                    </figure>
-
-                    <figure class="founder">
-                      <img src="assets/images/colour-photo-dom.jpeg" alt="Photo of Domingo Castillo, Co-Founder" class="founder-photo">
-                      <figcaption class="founder-caption">
-                        <p class="founder-name">Domingo Castillo</p>
-                        <p class="founder-role">Co-Founder & CTO</p>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </section>
-
-                </div>
-                <div class="column-text">
-                    <h2>About Us</h2>
-                    <h3>INNOVATION ACROSS CONTINENTS</h3>
-                    <p>JDML Web & Applications was founded by Jon and Dom, two professionals united by a passion for blending innovative technology with creative problem-solving. This shared vision connects our team across the globe, with Jon supporting businesses in Australia, Germany, and Iceland, and Dom focusing on English and Spanish-speaking markets from his base in Spain.</p>
-                    <p>Together, we leverage a strong network of IT experts from England to Indonesia to deliver versatile, world-class solutions. Our mission is to engineer the technology that drives your business forward. Whether you're capturing a new market or optimizing a complex process, we provide the tools and strategic guidance you need to succeed.</p>
-                    <h4>Our core services are designed for impact:</h4>
-                    <ul>
-                        <li><b>Custom Software & Applications:</b> Tailored solutions to automate workflows, manage complex data, and scale your operations.</li>
-                        <li><b>Professional Websites:</b> Visually stunning, responsive sites designed to captivate your audience and convert visitors into customers.</li>
-                        <li><b>Full Stack Web Applications:</b> Powerful, scalable web apps built to handle complex user interactions and business logic.</li>
-                        <li><b>Search Engine Optimization (SEO):</b> Data-driven strategies to increase your online visibility, attract qualified traffic, and dominate search rankings.</li>
-                        <li><b>Machine Learning & Innovation Consulting:</b> Strategic guidance to harness the power of AI, giving you a decisive competitive advantage.</li>
-                        <li><b>Creative Media Management & Production:</b> Expert video and photo editing services designed to captivate your audience, tell your story effectively, and drive engagement.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Websites Section -->
-        <section  class="content-section bg-dark animate-on-scroll">
-            <div id="websites" class="container three-column">
-                <div class="column-text">
-                    <h2>Website Solutions</h2>
-                    <h3>YOUR DIGITAL HUB</h3>
-                    <p>A website is the central hub of your digital presence. Our approach is rooted in strategy, with meticulous attention to User Interface (UI) and User Experience (UX) to ensure every visitor's journey is intuitive, engaging, and aligned with your business goals. From simple, high-impact landing pages to complex, multi-page platforms, we build websites that perform.</p>
-                    
-                    <h4>Marketing & Branding Websites</h4>
-                    <ul>
-                        <li><b>Single-Page & Landing Sites:</b> Perfect for marketing campaigns or product launches.</li>
-                        <li><b>Corporate & Business Websites:</b> Comprehensive, multi-page sites built with SEO as a core foundation.</li>
-                        <li><b>Portfolio & Showcase Sites:</b> Visually-driven platforms to showcase your best work.</li>
-                    </ul>
-                    
-                    <h4>E-commerce & Transactional Platforms</h4>
-                    <ul>
-                        <li><b>E-commerce Stores:</b> Secure and scalable online stores with full payment processing.</li>
-                        <li><b>Booking & Reservation Systems:</b> Integrated solutions for appointments or ticket sales.</li>
-                        <li><b>Subscription & Membership Sites:</b> Platforms with gated content and recurring payments.</li>
-                    </ul>
-
-                    <h4>Flexible Hosting & Management</h4>
-                    <p>We offer fully packaged websites for your own hosting or a Fully Managed Solution on Google Cloud Platform (GCP), handling all technical aspects for a monthly fee.</p>
-                </div>
-                <div id="seo-media" class="column-text">
-                    <h2>SEO & Media</h2>
-                    <h3>GROWTH THROUGH VISIBILITY</h3>
-                    <p>Our creative media services are tightly integrated with SEO strategies that improve your online visibility and drive measurable growth. Every piece of content is optimized for search engines and aligned with your brand’s objectives.</p>
-
-                    <h4>Creative Media Management</h4>
-                    <p>We focus on enhancing and refining the media you provide, ensuring it is optimized for professional presentation:</p>
-                    <ul>
-                        <li><b>Video & Photo Editing:</b> Professional refinement of your raw footage and images.</li>
-                        <li><b>Colour Grading:</b> Consistent and cinematic-level grading to enhance your brand's visual identity.</li>
-                        <li><b>Generative AI Support:</b> Production of AI-assisted images or video to complement your media library.</li>
-                    </ul>
-
-                    <h4>SEO Integration & Transparency</h4>
-                    <p>Unlike agencies that treat SEO as a “mystery box,” we believe in a transparent, iterative approach. We provide clear reporting and insights so you always know what’s driving performance.</p>
-            </div>
-                <div id="ml-ai" class="column-text">
-                    <h2>Machine Learning & AI</h2>
-                    <h3>INTELLIGENT SOLUTIONS</h3>
-                    <p>We build and deploy cutting-edge Machine Learning (ML) and Artificial Intelligence (AI) solutions using industry-leading frameworks such as PyTorch and TensorFlow. Our expertise spans predictive modeling, natural language processing, and intelligent automation.</p>
-
-                    <h4>Industry Applications</h4>
-                    <ul>
-                        <li><b>Healthcare AI:</b> Including our award-finalist project for predicting Obstructive Sleep Apnoea.</li>
-                        <li><b>Sports Betting Algorithms:</b> Data-driven predictive systems to identify patterns and trends.</li>
-                        <li><b>Commodity Price Prediction:</b> Forecasting models for gold and other markets.</li>
-                        <li><b>Voice Recognition & Emotional Analysis:</b> Advanced models for speech-to-text and sentiment detection.</li>
-                    </ul>
-
-                    <h4>Next-Generation AI Capabilities</h4>
-                    <p>We create custom applications powered by large language models like ChatGPT, Gemini, and Claude, from conversational agents to intelligent, task-focused AI systems that act autonomously.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Contact Section -->
-        <section id="contact" class="content-section animate-on-scroll">
+        <!-- Hero Section -->
+        <section class="hero-section">
             <div class="container">
-                <div class="contact-info">
-                    <h2>Contact</h2>
-                    <h3>LET'S BUILD SOMETHING GREAT</h3>
-                    <p>
-                        Have a project in mind or just want to say hello? Please get in touch via email or phone.
-                    </p>
-                    <p>
-                        <strong>Email:</strong> 
-                        <a href="mailto:jon@jdml.com.au">jon@jdml.com.au</a> or 
-                        <a href="mailto:dom@jdml.com.au">dom@jdml.com.au</a>
-                    </p>
-                    <p>
-                        <strong>Phone or Whatsapp Jon:</strong> 
-                        <a href="tel:+61494302054">(+61) 0494 302 054</a>
-                    </p>
+                <div class="hero-content">
+                    <h1>Driving Business Transformation with Intelligent Technology</h1>
+                    <p>We deliver expert solutions in web development, digital marketing, and artificial intelligence to elevate your brand and accelerate growth.</p>
+                    <a href="services.html" class="btn btn-primary">Explore Our Services</a>
                 </div>
             </div>
         </section>
 
+        <!-- Services Overview Section -->
+        <section id="services-overview" class="bg-grey">
+            <div class="container text-center">
+                <h2>Our Core Capabilities</h2>
+                <p>We provide a comprehensive suite of services designed to solve complex challenges and create lasting value for your business.</p>
+                <div class="services-grid">
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Web Development</h3>
+                        <p>From high-impact marketing sites to complex web applications, we build digital platforms that perform.</p>
+                        <a href="web-development.html">Learn More &rarr;</a>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Digital Marketing & SEO</h3>
+                        <p>Increase your visibility, attract qualified traffic, and dominate search rankings with data-driven SEO and media strategies.</p>
+                        <a href="digital-marketing.html">Learn More &rarr;</a>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Harness the power of AI with custom models for predictive analytics, automation, and intelligent applications.</p>
+                        <a href="ai-ml-solutions.html">Learn More &rarr;</a>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-code"></i></div>
+                        <h3>Custom Software Development</h3>
+                        <p>We design, build, and deploy software tailored precisely to your unique business processes, goals, and challenges.</p>
+                        <a href="custom-software.html">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Snippet -->
+        <section id="about-snippet">
+            <div class="container two-column">
+                <div class="column-text">
+                    <h4>WHO WE ARE</h4>
+                    <h3>Innovation Across Continents</h3>
+                    <p>JDML was founded by Jon and Dom, two professionals united by a passion for blending innovative technology with creative problem-solving. This shared vision connects our team across the globe, from Australia to Spain.</p>
+                    <p>We leverage a strong network of IT experts to deliver versatile, world-class solutions. Our mission is to engineer the technology that drives your business forward.</p>
+                    <a href="about.html" class="btn btn-primary">Meet The Team</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="site-footer-bottom">
+    <!-- The single, correct footer placed before the script tag -->
+    <footer class="site-footer">
         <div class="container">
-            <p>© JDML Web & Applications. ABN: 12 686 792 162.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <a href="index.html" class="logo">JDML.</a>
+                    <p>Driving business transformation with intelligent technology solutions.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog/Insights</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="web-development.html">Web Development</a></li>
+                        <li><a href="digital-marketing.html">Digital Marketing & SEO</a></li>
+                        <li><a href="ai-ml-solutions.html">AI & Machine Learning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>
+                        Let's build something great together.
+                        <br>
+                        <a href="contact.html" style="font-weight: bold; color: white;">Get in Touch</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© JDML Web & Applications. ABN: 12 686 792 162.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Custom JS -->
     <script src="assets/script.js"></script>
-
 </body>
 </html>
