@@ -162,6 +162,7 @@ a:hover { color: var(--color-primary-darker); }
     color: var(--color-light);
     background: url('images/hero-background.jpg') no-repeat center center/cover; /* Replace with your image */
     padding: 0;
+    padding-top: 2rem;
 }
 .hero-section::before {
     content: '';
@@ -407,7 +408,7 @@ a:hover { color: var(--color-primary-darker); }
         justify-content: center;
         align-items: center;
         display: flex;
-        transition: left 0.4s ease-in-out;
+        transition: left 0.3s ease-in-out;
     }
     .main-nav.is-active {
         left: 0;
