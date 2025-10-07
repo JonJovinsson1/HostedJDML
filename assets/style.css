@@ -185,6 +185,8 @@ a:hover { color: var(--color-primary-darker); }
     color: var(--color-light);
     max-width: 600px;
     margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto; 
 }
 
 /* --- PAGE HEADER (FOR INTERNAL PAGES) --- */
