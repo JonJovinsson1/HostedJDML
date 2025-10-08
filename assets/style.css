@@ -133,7 +133,7 @@ a:hover { color: var(--color-primary-darker); }
     position: relative;
     padding-bottom: 5px;
 }
-.site-header:not(.scrolled) .main-nav ul li a { color: var(--color-light); } /* Nav links color on transparent header */
+.site-header:not(.scrolled) .main-nav ul li a { color: var(--color-light); } 
 .site-header.scrolled .main-nav ul li a { color: var(--color-text); }
 
 .main-nav ul li a::after {
